@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+
+              
+<name>Disappearing letters</name>
+<creationDate>02.02.2013</creationDate>
+<author>Marek Tomaszewski</author>
+<authorUrl>http://www.tomold.pl</authorUrl>
+<version>1.0</version>
+<license>GPLv2</license>
+<description>disappearing letters</description>                      
+                     
+                        
+                              
+<files>
+
+    
+<filename>mod_literki.xml</filename>
+<filename module="mod_literki">mod_literki.php</filename>
+<filename>index.html</filename>
+<filename>helper.php</filename>
+<filename>tmpl/default.php</filename>
+<filename>tmpl/index.html</filename>
+<filename>css/css1.css</filename>
+<filename>css/css2.css</filename>
+<filename>css/css3.css</filename>
+<filename>css/index.html</filename>
+</files>
+
+	<languages>
+		<language tag="pl-PL">pl-PL.mod_literki.ini</language>
+		<language tag="en-GB">en-GB.mod_literki.ini</language>
+             
+	</languages>
+
+
+<config>
+
+<config>
+    
+
+<fields name="params">
+<fieldset name="liprimary_fieldset" label="Module Parameters" description="Module settings">
+
+  <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module class suffix"></field>
+<field name="jquerylibrary" type="checkbox" label="MOD_LITERKI_JQUERY_LOAD" description="MOD_LITERKI_JQUERY_LOAD_DESC" value="1" />
+<field name="mylistvalue" type="list" default="0" label="MOD_LITERKI_FIELD_STYL_MODULU" description="Styl wyświetlania tekstu w dokumencie arkuszu stylów.">
+  <option value="0">MOD_LITERKI_FIELD_STYL_01</option>
+  <option value="1">MOD_LITERKI_FIELD_STYL_02</option>
+  <option value="2">MOD_LITERKI_FIELD_STYL_03</option>
+  <option value="3">MOD_LITERKI_FIELD_STYL_UZYTKOWNIKA</option>
+</field>
+
+<field
+					name="FontSize"
+					type="text"
+					default="35px"
+					label="MOD_LITERKI_FIELD_FONTSIZE"
+					description="MOD_LITERKI_FIELD_FONTSIZE2_DESC" />
+<field
+					name="FontColor"
+					type="text"
+					default="yellow"
+					label="MOD_LITERKI_FIELD_FONTCOLOR"
+					description="MOD_LITERKI_FIELD_FONTCOLOR_DESC" />
+<field
+					name="FontFamily"
+					type="text"
+					default="Arial"
+					label="MOD_LITERKI_FIELD_FONTFAMILY"
+					description="MOD_LITERKI_FIELD_FONTFAMILY_DESC" />
+
+
+
+<field type="spacer" name="myspacer01a" hr="true" />
+<field name="limytextarea" type="textarea" default="Insert text" label="Tekst:" description="Tekst do wyświetlenia na stronie" rows="5" cols="40" />
+<field type="spacer" name="myspacer02a" hr="true" />
+
+
+<field
+					name="AnimationSpeed"
+					type="text"
+					default="500"
+					label="MOD_LITERKI_FIELD_SZYBKOSC_ZANIKANIA"
+					description="MOD_LITERKI_FIELD_SZYBKOSC_ZANIKANIA_DESC" />
+
+<field
+					name="FinalTransparent"
+					type="text"
+					default="0.001"
+					label="MOD_LITERKI_FIELD_TRANSPARENTNOSC"
+					description="MOD_LITERKI_FIELD_TRANSPARENTNOSC_DESC" />
+<field type="spacer" name="myspacer03a" hr="true" />
+
+</fieldset>
+</fields>
+</config>
+
+
+
+
+</config>
+</extension>
+
+

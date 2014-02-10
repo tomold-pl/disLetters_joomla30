@@ -1,0 +1,26 @@
+/* 
+    Document   : css
+    Created on : 2013-01-23, 18:52:17
+    Author     : Marek
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.marek{
+    float:left;
+    font-size: 50px;
+    color:blue;
+    text-shadow: black 2px 2px 4px;
+    line-height: 50px;
+}
+    
+    
+.marek2{
+
+float: left;
+font-size:50px;
+line-height:50px; 
+    
+}
+
+
